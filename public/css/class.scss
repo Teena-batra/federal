@@ -1,0 +1,20 @@
+$fontSizes: 10,11,12,13,14,15,17,18,19,20,21,22,23,24,25,26,27,28,29,30,32,34,36,38,40;
+@each $fontS in $fontSizes{
+  .fs-#{$fontS}{
+    font-size: $fontS + px;
+  }
+}
+$fontWi: 100, 200, 300, 400, 500, 600, 700, 800;
+@each $fontW in $fontWi{
+    .fw-#{$fontW}{
+        font-weight: $fontW;
+    }
+}
+.border_dashed_top {
+    border-top: 1px dashed #CDCDCD;
+}
+
+
+.cursor-pointer{
+    cursor: pointer;
+}

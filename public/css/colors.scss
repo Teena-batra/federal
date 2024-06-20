@@ -1,0 +1,62 @@
+$black: #000;
+$white: #ffffff;
+$primary: #01468E;
+$primary-2: #F7A600;
+$light: #F7FBFF;
+$light-2: #DFEFFF;
+$success: #119E00;
+$danger: #EF2626;
+
+
+
+.bg-light{
+    background: $light !important;
+}
+.bg-light-2{
+    background: $light-2;
+}
+
+.text-success{
+    color: $success !important;
+}
+
+.bg-primary{
+    background: $primary !important;
+}
+.border-primary{
+    border-color: $primary !important;
+}
+.text-primary{
+    color: $primary !important;
+}
+.text-primary-2{
+    color: $primary-2 !important;
+}
+
+.border-bottom-dashed-primary{
+    border-bottom: 1px dashed $light-2;
+}
+
+.btn-primary{
+    color: $white !important;
+    border-color: $primary !important;
+    background: $primary !important;
+    font-size: 14px;
+    &:hover{
+        opacity: .9;
+    }
+}
+
+.border-primary-2{
+    border-color: $light-2 !important;
+}
+
+.btn-outline-primary{
+    color: $primary !important;
+    border-color: $primary !important;
+    font-size: 14px;
+    &:hover{
+        background: $primary !important;
+        color: $white !important;
+    }
+}

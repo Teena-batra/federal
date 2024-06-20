@@ -1,0 +1,26 @@
+
+@mixin marginAll($directionM, $qtyM){
+    margin-#{$directionM}: $qtyM + px!important;
+}
+@mixin paddAll($paddnM, $padM){
+    padding-#{$paddnM}: $padM + px!important;
+}
+ 
+
+@mixin borderWid($borderW: 1, $borderC: $black, $borderS: solid){
+    border: $borderW+px $borderS $borderC !important;
+}
+
+@mixin backgroundImagePng($bgColor: transparent, $bgImage, $bgRepeat: no-repeat, $bgPosition: right center, $bgSize: cover){
+    background: $bgColor url('../images/#{$bgImage}.png') $bgRepeat $bgPosition/$bgSize !important; 
+    @content;
+} 
+
+
+@mixin posAbs($aLeft: 0, $aRight: 0, $aTop: 0, $aBottom: 0){
+    position: absolute;
+    left: $aLeft+px;
+    right: $aRight+px;
+    top: $aTop+px;
+    bottom: $aBottom+px;
+}
